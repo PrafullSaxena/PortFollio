@@ -14,8 +14,21 @@ export class SkillComponent implements OnInit {
     public theme: SwitchingThemesService
   ) { }
 
+  isShowAllSkillsSelected: boolean = false;
+
+  model = document?.querySelector('.skil-icons-expand');
+
   ngOnInit(): void {
   }
 
+  showAllSkills() : void {
+    this.isShowAllSkillsSelected = !this.isShowAllSkillsSelected;
+  }
+
+  closeModel() : void {
+    this.isShowAllSkillsSelected = false;
+  }
+
 }
+
  

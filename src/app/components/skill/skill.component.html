@@ -1,2 +1,47 @@
-<p>skill works!</p>
- 
+<div class="main-container">
+    <div class="text-area">
+        <div class="heading display-4">
+            <span [ngClass]="{'color-dark':theme.DarkModeSelected}">Hi all, I'm Prafull</span>
+              <span>
+                <img src="../../../assets/Icons/skills.svg" alt="" 
+                id="skill-heading-icon"/>
+              </span> 
+          </div>
+          <div class="sub-text fs-4 ">
+              <span>{{values.skillsDetails}}</span>
+          </div>
+            <div class="skil-icons-collaps">
+                <img src="../../../assets/Icons/bxl-java.svg" alt="">
+                <img src="../../../assets/Icons/bxl-python-color.svg" alt="">
+                <img src="../../../assets/Icons/bxl-angular.svg" alt="">
+                <img src="../../../assets/Icons/mongodb.svg" alt="">
+                <a href="#skills" (click)="showAllSkills()" >
+                    <img class="toggleAllSkills" src="../../../assets/Icons/right-arrow.svg" alt="" *ngIf="!this.isShowAllSkillsSelected">
+                    <img class="toggleAllSkills" src="../../../assets/Icons/close.svg" alt="" *ngIf="this.isShowAllSkillsSelected">
+                </a>
+            </div>
+
+    </div>
+    <div class="image">
+        <img src="../../../assets/Icons/roadmapping colored.svg" alt="">
+    </div>
+</div>
+
+<div class="model" 
+    [ngClass]="{'showModel':this.isShowAllSkillsSelected}">
+    <div class="skil-icons-expand" 
+        [ngClass]="{'dark':theme.DarkModeSelected}">
+        <div class="sill-container"  *ngFor="let skill of values.skills_icons">
+                <img src="{{skill.path}}" alt="">
+                <h6 class="text-center ">{{skill.name}}</h6>
+        </div>
+    </div> 
+</div>
+
+
+
+
+<!-- Start: Model -->
+
+
+<!-- End: Model -->

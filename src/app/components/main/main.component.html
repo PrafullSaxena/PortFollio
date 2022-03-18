@@ -1,12 +1,13 @@
-
-
-   <app-navbar></app-navbar>
-<div class="container">
-   <!-- <app-intro></app-intro> -->
-</div>
-<div class="container">
-   <!-- <app-what-ido></app-what-ido> -->
-</div>
-<div class="container">
-   <app-skill></app-skill>
+<div id="main-container" [ngClass]="{ dark: themeService.DarkModeSelected }">
+  <app-navbar></app-navbar>
+  
+  <div class="container" id="intro">
+    <app-intro></app-intro>
+  </div>
+  <div class="container" id="whatIdo">
+    <app-what-ido></app-what-ido>
+  </div>
+  <div class="container" id="skills">
+    <app-skill></app-skill>
+  </div>
 </div>

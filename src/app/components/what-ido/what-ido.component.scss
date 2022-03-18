@@ -14,7 +14,8 @@
     gap: 2rem;
 
     .box-1{
-    	@include swing-in-left;
+    	// @include swing-in-left;
+        @include text-zoom-out;
         
         display: flex;
         flex-direction: column;

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CertificateObject } from 'src/assets/Objects/CertificatesObject';
 import { Project } from 'src/assets/Objects/ProjectObject';
+import { skillsIcons } from 'src/assets/Objects/SkillsIcons';
 
 
 @Injectable({
@@ -30,6 +31,31 @@ export class HardCodingDataService {
     "Docker", "GitHub", "Wireshark", "AWS-S3", "Isilon", "Networking", "SMB/NFS", "CyberSecurity"
   ];
   
+  skills_icons : skillsIcons[] = [
+    new skillsIcons("../assets/Icons/bxl-java.svg","Java"),
+    new skillsIcons("../assets/Icons/bxl-python-color.svg","Python"),
+    new skillsIcons("../assets/Icons/bxl-angular.svg","Angular"),
+    new skillsIcons("../assets/Icons/mongodb.svg","MongoDB"),
+    new skillsIcons("../assets/Icons/bxl-html5.svg","HTML5"),
+    new skillsIcons("../assets/Icons/bxl-css3.svg","CSS3"),
+    new skillsIcons("../assets/Icons/bxl-sass.svg","SCSS"),
+    new skillsIcons("../assets/Icons/bxl-javascript.svg","JavaScript"),
+    new skillsIcons("../assets/Icons/bxl-android.svg","Android"),
+    new skillsIcons("../assets/Icons/postgresql.svg","Postgresql"),
+    new skillsIcons("../assets/Icons/mysql.svg","MySQL"),
+    new skillsIcons("../assets/Icons/githuub.svg","Git"),
+    new skillsIcons("../assets/Icons/bxl-spring-boot.svg","Spring"),
+    new skillsIcons("../assets/Icons/typescript.svg","TypeScript"),
+    new skillsIcons("../assets/Icons/lan-networking.svg","Networking"),
+    new skillsIcons("../assets/Icons/secure-networking.svg","CyberSec"),
+    new skillsIcons("../assets/Icons/nas.svg","NAS"),
+    new skillsIcons("../assets/Icons/bxl-docker.svg","Docker"),
+    new skillsIcons("../assets/Icons/figma.svg","Figma"),
+    new skillsIcons("../assets/Icons/bxl-aws.svg","EC2")
+  ];
+
+
+
 
   // Proficiency Percentage
   backEndProfPercent : number = 10;
@@ -91,6 +117,11 @@ export class HardCodingDataService {
     ["Bug Bounty Hunting","Java / Python","Angular","Full Stack Development"]
   );
 
+  certificate_array : CertificateObject[] = [this.ecCouncil, 
+    this.ciscoCS,
+    this.linkedinLearing,
+    this.udemy];
+ 
   //  End: Certificates
 
   // svgPath : string = "";

@@ -13,7 +13,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavComponent } from './components/nav/nav.component';
 import { WhatIdoComponent } from './components/what-ido/what-ido.component';
 import { SkillComponent } from './components/skill/skill.component';
-
+import { ProficiencyComponent } from './components/proficiency/proficiency.component';
+// import { ModalModule } from './_modal';
 
 @NgModule({
   declarations: [
@@ -26,12 +27,13 @@ import { SkillComponent } from './components/skill/skill.component';
     NavComponent,
     WhatIdoComponent,
     SkillComponent,
+    ProficiencyComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
