@@ -1,0 +1,48 @@
+
+
+<nav>
+    <div class="container-fluid ">
+        <div class="box logo">
+            <h1 ><span><</span>
+            Prafull Saxena
+             <span>/></span></h1>
+         </div>
+
+       <div class="box box-hamburger">
+        <button class="hamburger" 
+        (click)="SwitchClicked()" [ngClass]="{'is-active':isClicked}">
+            <div >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+       </div>
+
+        <div class="box menu"
+         >
+            <ul>
+                <li  class="nav-btn "><span aria-disabled="true"></span><a href="#" class="fs-4">About</a></li>
+                <li class="nav-btn"><span aria-disabled="true"></span><a href="#" class="fs-4">Projects</a></li>
+                <li class="nav-btn"><span aria-disabled="true"></span><a href="#" class="fs-4">Contact me</a></li>
+                <li class="nav-btn"><app-theme-toggle-button></app-theme-toggle-button></li>
+            </ul>
+            
+        </div>
+       
+
+
+        <!-- {{isClicked}} -->
+    </div>
+    <div class="mobile-menu slide-in-elliptic-top-fwd"
+    [ngClass]="{'show-menu':isClicked}">
+       <ul>
+        <li class="nav-btn"><app-theme-toggle-button></app-theme-toggle-button></li>
+           <li  class="nav-btn"><span aria-disabled="true"></span><a href="#" class="fs-3">About</a></li>
+           <li class="nav-btn"><span aria-disabled="true"></span><a href="#" class="fs-3">Projects</a></li>
+           <li class="nav-btn"><span aria-disabled="true"></span><a href="#" class="fs-3">Contact me</a></li>
+          
+       </ul>
+   </div>
+</nav>
+

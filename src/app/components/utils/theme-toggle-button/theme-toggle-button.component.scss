@@ -1,0 +1,36 @@
+.toggeler{
+    position: relative;
+    // margin-top: 10rem;
+}
+
+img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.cloud{
+    position: absolute;
+    top: -.8rem;
+    left: -.3rem;
+    z-index: 10;
+    width: 4rem;
+    height: 4rem;
+}
+
+.dark{
+    
+    .cloud{
+        left: 2.5rem;
+    }
+}
+
+.toggel-slider{
+    width: 6rem;
+    background-color: rgba(168, 168, 168, 0.363);
+    // margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-color: inherit;
+}
+

@@ -1,0 +1,71 @@
+ 
+@import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/animations.scss";
+
+
+.main-container{
+
+    padding-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    
+    .box{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        height: 100%;
+        width: 100%;
+        // border: 2px solid yellowgreen;
+    }
+
+    .info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .heading{
+            @include title-font;
+            width: 15ch;
+        }
+    
+        #waving-hand{
+            @include waving-hand-animation;
+            margin-left: 5px;
+            margin-bottom: 4px;
+            height: 1em;
+    
+        }
+    
+        .sub-heading{
+            @include para-font;
+            line-height: 1.7em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .img-icon{
+            @include jiggle-icons;
+            height: 1.5em;
+        }
+    }
+
+
+
+}
+
+
+@media (min-width:768px) {
+
+    .main-container{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image{
+        width: 50vw;
+    }
+}
