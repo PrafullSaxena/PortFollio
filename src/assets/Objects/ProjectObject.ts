@@ -1,16 +1,11 @@
 
 export class Project {
 
-    svgLocation : String = "";
-    projectName : string = "";
-    projectInfo : string = "";
-    projectURL : string = "";
-
     constructor(
-        svgLocation : string,
-        projectName : string,
-        projectInfo : string,
-        projectURL : string) {
+        public svgLocation : string,
+        public projectName : string,
+        public projectInfo : string,
+        public projectURL : string) {
 
             this.svgLocation = svgLocation;
             this.projectName = projectName;

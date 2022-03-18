@@ -1,16 +1,11 @@
 
 export class CertificateObject {
 
-    imgUrl : String = "";
-    certificateName : string = "";
-    infoCertificate : string = "";
-    lists : string[] = [];
-
     constructor(
-        imgUrl : string,
-        certificateName : string,
-        infoCertificate : string,
-        lists : string[]) {
+        public imgUrl : string,
+        public certificateName : string,
+        public infoCertificate : string,
+        public lists : string[]) {
 
             this.imgUrl = imgUrl;
             this.certificateName = certificateName;

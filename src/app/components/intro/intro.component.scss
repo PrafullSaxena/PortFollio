@@ -1,71 +1,144 @@
  
 @import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/color.scss";
 @import "../../../assets/SCSS/animations.scss";
 
 
-.main-container{
+// Default Stylings : Start
 
+.main-container{
     padding-top: 5rem;
 
-    display: flex;
-    flex-direction: column;
 
-    
-    .box{
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        height: 100%;
-        width: 100%;
-        // border: 2px solid yellowgreen;
+    .box-1{ 
+        @include swing-in-left;
+        // background-color: #EC615B
     }
-
+    .box-2{
+        @include swing-in-right;
+    }
     .info-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    
+
+            // border: 2px solid tan;
+
+
+            .heading{
+                @include title-font;
+                // width: 15ch;
+            }
+        
+            #waving-hand{
+                @include waving-hand-animation;
+                margin-left: 5px;
+                margin-bottom: 4px;
+                height: 1em;
+        
+            }
+        
+            .sub-heading{
+                @include para-font;
+                line-height: 1.7em;
+            }
+        
+            .img-icon{
+                @include jiggle-icons;
+                height: 1.5em;
+            }
+
+            .btns{
+                @include btn-font;
+                // border: 1px solid black;
+
+                display: flex;
+                justify-content: center;
+                .resume{
+                    border: 1px solid #825BEA;
+                    background-color: #825BEA;
+                    color: white;
+                }
+    
+                .resume:hover{
+                    border: 1px solid #825BEA;
+                    background-color: white;
+                    color: #825BEA;
+                }
+                .contact{
+                    border: 1px solid #EC615B;
+                    background-color: #EC615B;
+                    color: white;
+                }
+    
+                .contact:hover{
+                    border: 1px solid #EC615B;
+                    background-color: white;
+                    color: #EC615B;
+                }
+            }
+
+
+    }
+}
+
+.color-dark{
+    color: #825BEA
+}
+
+// Default Stylings : Ends
+
+// Custome Stylings : Start
+
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
 
         .heading{
-            @include title-font;
-            width: 15ch;
-        }
-    
-        #waving-hand{
-            @include waving-hand-animation;
-            margin-left: 5px;
-            margin-bottom: 4px;
-            height: 1em;
-    
-        }
-    
-        .sub-heading{
-            @include para-font;
-            line-height: 1.7em;
+            margin-bottom: 2rem;
             margin-left: auto;
             margin-right: auto;
         }
-    
-        .img-icon{
-            @include jiggle-icons;
-            height: 1.5em;
+
+        .sub-heading{
+            margin-left: auto;
+            margin-right: auto;
         }
+
+
     }
 
 
+// Custome Stylings : Start
 
-}
 
+// Custome Stylings : Start
 
 @media (min-width:768px) {
 
     .main-container{
+        gap: 0;
+        grid-template-columns: 1fr 1fr; 
+        div{
+            // margin-bottom: 3rem;
+        }
 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+
+    }
+
+    .btns{
+        justify-content: start;
         align-items: center;
+        // background-color: yellow;
     }
 
-    .hero-image{
-        width: 50vw;
-    }
 }
+
+// Custome Stylings : End
+
+
+
+

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HardCodingDataService } from 'src/app/hard-coding-data.service';
+import { SwitchingThemesService } from 'src/app/switching-themes.service';
+import { ThemeToggleButtonComponent } from '../utils/theme-toggle-button/theme-toggle-button.component';
 
 @Component({
   selector: 'app-intro',
@@ -8,7 +10,7 @@ import { HardCodingDataService } from 'src/app/hard-coding-data.service';
 })
 export class IntroComponent implements OnInit {
 
-  constructor(public values:HardCodingDataService) { }
+  constructor(public values:HardCodingDataService, public theme:SwitchingThemesService) { }
 
   ngOnInit(): void {
   }
