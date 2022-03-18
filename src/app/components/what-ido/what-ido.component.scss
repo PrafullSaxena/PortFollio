@@ -1,0 +1,85 @@
+@import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/color.scss";
+@import "../../../assets/SCSS/animations.scss";
+
+
+
+
+// Default Values : Start
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .box-1{
+    	@include swing-in-left;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        line-height: 1.7em;
+
+        .heading{
+            @include title-font;
+            
+            margin-bottom: 2rem;
+
+            #robo-face{
+                @include jiggle-icons;
+                width: 1em;
+                vertical-align: baseline;
+                margin-top: 2px;
+            }
+        }
+       
+        .sub-text{
+            @include para-font;
+
+            .icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 2em;
+                    vertical-align: baseline;
+                    margin: 1rem;
+                }
+
+                img:hover{
+                    @include wobble-icons;
+                }
+            }
+        }
+    }
+    .box-2{
+    	@include swing-in-right;
+
+
+    }
+}
+
+.color-dark{
+    color: #825BEA
+}
+
+
+@media (min-width:768px) {
+    .main-container{
+        gap: 0;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+}
+// Default Values : End
+
+
+// Customize Values : Start
+
+
+// Customize Values : End
