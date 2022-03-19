@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <div class="heading display-5 text-center">
+        <span [ngClass]="{'color-dark':theme.DarkModeSelected}">Let's Catch up</span>
+    </div>
+
+    <div class="main-container">
+        <div class="box-1 text-area text-center">
+
+            <div class="icon-container my-4 " >
+                <div class="icon mx-2" *ngFor="let media of values.medias">
+                    <a href="{{media.url}}" target="_blank">
+                        <img src="{{media.iconPath}}" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" 
+                class="form-control" 
+                id="exampleFormControlInput1" 
+                placeholder="{{values.namePlaceHolder}}"
+                [ngClass]="{'bg-dark':theme.DarkModeSelected}">
+            </div>
+            <div class="mb-3">
+                <input type="email" 
+                class="form-control" 
+                id="exampleFormControlInput1" 
+                placeholder="{{values.emailPlaceHolder}}"
+                [ngClass]="{'bg-dark':theme.DarkModeSelected}">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" 
+                id="exampleFormControlTextarea1" rows="3"
+                placeholder="{{values.messagePlaceHolder}}"
+                [ngClass]="{'bg-dark':theme.DarkModeSelected}"></textarea>
+            </div>
+            <button class="btn message-btn" (click)="SendMsg()">Send me a Message</button>
+        </div>
+        <div class="box-2 image">
+            <img src="../../../assets/Icons/contact me.svg" alt="">
+        </div>
+    </div>
+
+</div>

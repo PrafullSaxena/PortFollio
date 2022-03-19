@@ -17,6 +17,7 @@ import { ProficiencyComponent } from './components/proficiency/proficiency.compo
 import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationComponent } from './components/education/education.component';
 import { ReachOutComponent } from './components/reach-out/reach-out.component';
+import { ContactComponent } from './components/contact/contact.component';
 // import { ModalModule } from './_modal';
 
 @NgModule({
@@ -34,6 +35,7 @@ import { ReachOutComponent } from './components/reach-out/reach-out.component';
     ProjectsComponent,
     EducationComponent,
     ReachOutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

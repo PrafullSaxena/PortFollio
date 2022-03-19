@@ -1,0 +1,73 @@
+@import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/color.scss";
+@import "../../../assets/SCSS/animations.scss";
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .box-1{
+    	@include swing-in-left;
+
+        
+    }
+    .box-2{
+    	@include swing-in-right;
+    }
+}
+
+
+.heading{
+    @include title-font;
+}
+
+.text-area{
+   @include para-font;
+    align-items: center;
+//    padding-top: 4em;
+}
+
+.message-btn{
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    background-color: $primary;
+}
+
+.message-btn:hover{
+    border: 1px solid $primary;
+    color: $primary;
+    background-color: whitesmoke;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 3em;
+    }
+}
+
+
+.color-dark{
+    color: #825BEA
+}
+
+.bg-dark{
+    border: 1px solid $primary;
+    background-color: #1A1717;
+    color: white;
+}
+
+@media (min-width:768px) {
+    .main-container{
+        gap: 0;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+}
