@@ -60,10 +60,17 @@
     img{
         margin-top: 10px;
         width: 40%;
-        border-bottom: 2px solid rgba(90, 100, 240, 0.678);
+       
+    }
+    
+    .college-logo{
+        padding-right: .5rem;
+       
         border-radius: 5px;
+        border-bottom: 2px solid rgba(90, 100, 240, 0.678);
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     }
+
 
     div{
         width: 100%;
@@ -108,10 +115,13 @@
 
         img{
             width: min(100%, 15rem);
-            border-right: 2px solid rgba(90, 100, 240, 0.678);
-            border-bottom: 0px;
+           
         }
 
+        .college-logo{
+            border-bottom: 0px;
+            border-right: 2px solid rgba(90, 100, 240, 0.678);
+        }
        
     }
 

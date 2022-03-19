@@ -200,13 +200,13 @@ export class HardCodingDataService {
 
   education: Education[] = [
     new Education(
-      "../assets/Logo/bits.logo.png", 
+      "../assets/Logo/bits-logo.png", 
       "M.Tech Software Engineering", 
       "Birla Institute of Technology and Science, Pilani", 
       "Pursuing..."),
 
     new Education(
-      "../assets/Logo/gla-logo.jpeg", 
+      "../assets/Logo/gla-logo.png", 
       "Bachelors of Computer Applications", 
       "GLA University, Mathura", 
       "Augest 2016 - July 2019")
