@@ -7,12 +7,13 @@
     @include title-font;
 
     img{
-        @include icons-zoom-in-out;
+        @include wobble-icons;
         width: 1.2em;
-    }
+    } 
 
     margin-bottom: 2rem;
  }
+
 
  .color-dark{
     color: #825BEA
@@ -20,7 +21,7 @@
 
 
  .prof-tab{
-
+     margin-top: 1rem;
     .icon-title{
         display: flex;
         justify-content: start;
@@ -54,6 +55,21 @@
     margin-bottom: .5rem;
  }
 
+ .experties-in-skills{
+    @include title-font;
+    display: none;
+
+    margin-right: 0px;
+    margin-left: auto;
+ }
+
+
+ .prof-tab:hover{
+    .experties-in-skills{
+        @include title-font;
+        display: block;
+     }
+ }
 
  @media (min-width:768px) {
 
@@ -69,3 +85,6 @@
         height: 20px;
     }
  }
+
+
+

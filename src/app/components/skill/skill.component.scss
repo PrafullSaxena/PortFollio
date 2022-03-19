@@ -26,14 +26,15 @@
       display: flex;
 
       #skill-heading-icon {
-        // @include icons-zoom-in-out;
-        @include jiggle-icons;
+        @include wobble-icons;
+       
         width: 1em;
 
         margin-bottom: 1rem;
         margin-top: 6px;
         margin-left: 3px;
       }
+
     }
 
     .sub-text {

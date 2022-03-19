@@ -66,13 +66,12 @@ export class HardCodingDataService {
   programmingProfPercent : number = 10;
 
   proficiency : prof[] = [
-    // new prof("Back-end", 89, "../assets/Icons/backend.svg"),
-    new prof("Back-end", 89, "../assets/Icons/backend copy.svg"),
-    new prof("Front-end", 70, "../assets/Icons/front-end.svg"),
-    new prof("Cyber Security", 55, "../assets/Icons/cybersecurity.svg"),
-    new prof("InfraStructure", 85, "../assets/Icons/infrastructure.svg"),
-    new prof("Android", 45, "../assets/Icons/android.svg"),
-    new prof("Programming", 93, "../assets/Icons/coding.svg"),
+    new prof("Back-end", 89, "../assets/Icons/backend copy.svg","Expert"),
+    new prof("Front-end", 70, "../assets/Icons/front-end.svg","Proficient"),
+    new prof("Cyber Security", 55, "../assets/Icons/cybersecurity.svg","Proficient"),
+    new prof("InfraStructure", 85, "../assets/Icons/infrastructure.svg","Expert"),
+    new prof("Android", 45, "../assets/Icons/android.svg","Learning"),
+    new prof("Programming", 93, "../assets/Icons/coding.svg","Expert"),
   ]
 
   
