@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { CertificateObject } from 'src/assets/Objects/CertificatesObject';
 import { Project } from 'src/assets/Objects/ProjectObject';
 import { skillsIcons } from 'src/assets/Objects/SkillsIcons';
-
+import { prof } from 'src/assets/Objects/proficiency';
 
 @Injectable({
   providedIn: 'root'
@@ -64,6 +64,16 @@ export class HardCodingDataService {
   infraStructureProfPercent : number = 10;
   androidProfPercent : number = 10;
   programmingProfPercent : number = 10;
+
+  proficiency : prof[] = [
+    // new prof("Back-end", 89, "../assets/Icons/backend.svg"),
+    new prof("Back-end", 89, "../assets/Icons/backend copy.svg"),
+    new prof("Front-end", 70, "../assets/Icons/front-end.svg"),
+    new prof("Cyber Security", 55, "../assets/Icons/cybersecurity.svg"),
+    new prof("InfraStructure", 85, "../assets/Icons/infrastructure.svg"),
+    new prof("Android", 45, "../assets/Icons/android.svg"),
+    new prof("Programming", 93, "../assets/Icons/coding.svg"),
+  ]
 
   
   // Contact me Details

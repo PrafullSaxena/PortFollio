@@ -1,0 +1,71 @@
+@import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/color.scss";
+@import "../../../assets/SCSS/animations.scss";
+
+
+ .heading {
+    @include title-font;
+
+    img{
+        @include icons-zoom-in-out;
+        width: 1.2em;
+    }
+
+    margin-bottom: 2rem;
+ }
+
+ .color-dark{
+    color: #825BEA
+}
+
+
+ .prof-tab{
+
+    .icon-title{
+        display: flex;
+        justify-content: start;
+        margin-bottom: .5rem;
+    }
+
+    .icon{
+        width: 2rem;
+        margin-left: 0;
+        margin-right: .5rem;
+    }
+
+    .prof-title{
+        @include title-font;
+    }
+
+    .prof-meter-range{
+
+        margin-top: .2rem;
+        height: 10px;
+        width: 100%;
+        margin-left: .2rem;
+
+        background-color: rgba(128, 128, 128, 0.507);
+
+        .prof-meter{
+            background-color: $primary;
+        }
+    }
+
+    margin-bottom: .5rem;
+ }
+
+
+ @media (min-width:768px) {
+
+    .prof-tab{
+        margin-bottom: 1.2rem;
+    }
+
+    .icon-title{
+        margin-bottom: 1rem;
+    }
+
+    .prof-meter-range{
+        height: 20px;
+    }
+ }

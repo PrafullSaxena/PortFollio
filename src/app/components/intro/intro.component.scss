@@ -54,23 +54,23 @@
                 .resume{
                     border: 1px solid #825BEA;
                     background-color: #825BEA;
-                    color: white;
+                    color: whitesmoke;
                 }
     
                 .resume:hover{
                     border: 1px solid #825BEA;
-                    background-color: white;
+                    background-color: whitesmoke;
                     color: #825BEA;
                 }
                 .contact{
                     border: 1px solid #EC615B;
                     background-color: #EC615B;
-                    color: white;
+                    color: whitesmoke;
                 }
     
                 .contact:hover{
                     border: 1px solid #EC615B;
-                    background-color: white;
+                    background-color: whitesmoke;
                     color: #EC615B;
                 }
             }
@@ -118,7 +118,8 @@
 
     .main-container{
         gap: 0;
-        grid-template-columns: 1fr 1fr; 
+        // grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 60% 40%; 
         div{
             // margin-bottom: 3rem;
         }
