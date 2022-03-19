@@ -15,6 +15,7 @@ import { WhatIdoComponent } from './components/what-ido/what-ido.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { ProficiencyComponent } from './components/proficiency/proficiency.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { EducationComponent } from './components/education/education.component';
 // import { ModalModule } from './_modal';
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     SkillComponent,
     ProficiencyComponent,
     ProjectsComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,

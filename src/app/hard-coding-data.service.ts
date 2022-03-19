@@ -3,6 +3,7 @@ import { CertificateObject } from 'src/assets/Objects/CertificatesObject';
 import { Project } from 'src/assets/Objects/ProjectObject';
 import { skillsIcons } from 'src/assets/Objects/SkillsIcons';
 import { prof } from 'src/assets/Objects/proficiency';
+import { Education } from 'src/assets/Objects/Education';
 
 @Injectable({
   providedIn: 'root'
@@ -193,4 +194,23 @@ export class HardCodingDataService {
   ];
 
   //End: Project
+
+
+  // Start: Education Info
+
+  education: Education[] = [
+    new Education(
+      "../assets/Logo/bits.logo.png", 
+      "M.Tech Software Engineering", 
+      "Birla Institute of Technology and Science, Pilani", 
+      "Pursuing..."),
+
+    new Education(
+      "../assets/Logo/gla-logo.jpeg", 
+      "Bachelors of Computer Applications", 
+      "GLA University, Mathura", 
+      "Augest 2016 - July 2019")
+  ];
+
+  // End: Education Info
 }

@@ -1,0 +1,122 @@
+@import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/color.scss";
+@import "../../../assets/SCSS/animations.scss";
+
+
+
+@keyframes increse-line {
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+@keyframes increse-line-max-width {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 300%;
+    }
+}
+
+
+
+.heading{
+
+    @include title-font;
+    margin-bottom: 2rem;
+    img{
+        @include wobble-icons;
+        width: 1.2em;
+        margin-left: 1rem;
+    }
+}
+
+.color-dark{
+    color: #825BEA
+}
+
+
+.education-card{
+
+    @include para-font;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin-top: 2rem;
+
+    div{
+        margin-bottom: 1rem;
+    }
+
+    img{
+        margin-top: 10px;
+        width: 40%;
+        border-bottom: 2px solid rgba(90, 100, 240, 0.678);
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    div{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .edu-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .edu-info-box{
+            display: flex;
+
+        }
+    }
+
+}
+
+.education-card:hover{
+    
+    .course-name{
+        text-decoration: underline;
+    }
+
+}
+
+
+
+
+@media (min-width:768px) {
+   
+    .education-card{
+
+        @include para-font;
+    
+        display: grid;
+        grid-template-columns: 15% 85%;
+
+        img{
+            width: min(100%, 15rem);
+            border-right: 2px solid rgba(90, 100, 240, 0.678);
+            border-bottom: 0px;
+        }
+
+       
+    }
+
+}
+
+
+
+

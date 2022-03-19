@@ -1,0 +1,29 @@
+
+
+<div class="container-fluid main-container">
+    <div class="text-box display-4 heading">
+        <span [ngClass]="{'color-dark':theme.DarkModeSelected}">Education </span>
+            <span>
+            <img src="../../../assets/Icons/education.svg" alt="" 
+             class="mt-0"/>
+        </span> 
+    </div>
+
+    <div *ngFor="let edu of values.education">
+        <div class="education-card" >
+            <div class="college-logo text-center">
+                <img src=" {{edu.collegeLogo}}" alt="">
+               
+            </div>
+            <div class="edu-info">
+                <div class="edu-info-box course-name fs-4"><span>{{edu.courseName}}</span></div>
+                <div class="edu-info-box college-name fs-5"><span>{{edu.collegeName}}</span></div>
+                <div class="edu-info-box course-duration fs-6"><span>{{edu.courseDurtion}}</span></div>
+            </div>
+            
+        </div>
+        <hr>
+    </div>
+    
+
+</div>
