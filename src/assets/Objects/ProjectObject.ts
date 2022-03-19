@@ -5,6 +5,8 @@ export class Project {
         public svgLocation : string,
         public projectName : string,
         public projectInfo : string,
-        public projectURL : string) { }
+        public projectURL : string,
+        public demoUrl : string,
+        public isDemoAvailable :boolean) { }
 
-}
+} 

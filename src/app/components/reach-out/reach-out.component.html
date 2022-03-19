@@ -1,0 +1,56 @@
+<div class="container-fluid main-container">
+    <div class="box-1 text-box ">
+        <div class="heading text-center display-5">
+            <span [ngClass]="{'color-dark':theme.DarkModeSelected}">Reach out to me!</span>
+            <span>
+                <img src="../../../assets/Icons/discussion.svg" alt="" id="waving-hand" class="mt-0" />
+            </span>
+        </div>
+
+        <div class="sub-title">
+            <h4 class="fs-4 text-center sub-title-text my-3">
+                DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL
+            </h4>
+        </div>
+
+        <div class="about-me"><h4 class="fs-5 text-center about-me-text my-2 fw-bolder">
+            {{values.aboutMe}}
+        </h4></div>
+   
+        <div class="other-info-container text-center">
+
+            <div class="other-info email fs-6">
+                <div class="img-fluid text-end">
+                    <img src="{{values.emailIcon}}" alt="">
+                </div>
+                <div class="email-box text-start">{{values.email}}</div>
+            </div>
+
+            <div class="other-info office fs-6">
+                <div class="img-fluid text-end">
+                    <img src="{{values.officeAddrsIcon}}" alt="">
+                </div>
+                <div class="office-addr-box text-muted text-start">{{values.officeAddr}}</div>
+            </div>
+
+            <div class="other-info home fs-6">
+                <div class="img-fluid text-end">
+                    <img src="{{values.homeAddrsIcon}}" alt="">
+                </div>
+                <div class="home-addr-box text-muted text-start">{{values.homeAddr}}</div>
+            </div>
+            
+            <div class="other-info open-to-work fs-6 mt-2">
+                <span>Open To Work:</span>
+                <span>< {{values.openToWork}} /></span>
+            </div>
+        
+        </div>
+    </div>
+
+
+
+    <div class="box-2 img-box text-center">
+        <img src="../../../assets/Images/me.jpg" class="img-fluid" alt="">
+    </div>
+</div>

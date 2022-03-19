@@ -27,7 +27,7 @@
 .project-box{
     padding: .5rem;
     min-width: 20rem;
-
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     box-shadow: rgba(81, 75, 139, 0.637) 0px 1px 3px,
                  rgba(81, 75, 139, 0.24) 0px 1px 2px;
@@ -36,7 +36,6 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 1em;
-
         .project-icon{
             width: 1.5em;
             margin-right: .5em;
@@ -49,6 +48,12 @@
         .github{
             width: 1.5em;
         }
+        .git-and-launch-icons{
+
+            img{
+                width: 1.5em;
+            }
+        }
 
     }
 
@@ -58,15 +63,10 @@
 }
 
 .project-box:hover{
-    // box-shadow: rgba(81, 75, 139, 0.25) 0px 54px 55px, 
-    //             rgba(81, 75, 139, 0.12) 0px -12px 30px, 
-    //             rgba(81, 75, 139, 0.12) 0px 4px 6px, 
-    //             rgba(81, 75, 139, 0.17) 0px 12px 13px, 
-    //             rgba(81, 75, 139, 0.09) 0px -3px 5px;
-    border: 1px solid $primary;
-    // @include shadow();
+
+    border: 1px solid $primary;;
     .project-name{
-        text-decoration: underline;
+        text-decoration: underline solid;
     }
 }
 

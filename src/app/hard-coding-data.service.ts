@@ -71,15 +71,20 @@ export class HardCodingDataService {
     new prof("Front-end", 70, "../assets/Icons/front-end.svg","Proficient"),
     new prof("Cyber Security", 55, "../assets/Icons/cybersecurity.svg","Proficient"),
     new prof("InfraStructure", 85, "../assets/Icons/infrastructure.svg","Expert"),
-    new prof("Android", 45, "../assets/Icons/android.svg","Learning"),
+    new prof("Android", 45, "../assets/Icons/android.svg","Learner"),
     new prof("Programming", 93, "../assets/Icons/coding.svg","Expert"),
   ]
 
-  
+   
   // Contact me Details
   aboutMe : string = "Full Stack Developer 👨‍💻 || Certified Ethical Hacker CEHv10 👾 || Competitive Programmer 🔥 || Technical Trainer 🎙 || Curious Geek 🤓";
+  officeAddr : string = "Bengaluru, Karnataka - India || बंगलुरु, कर्नाटक - भारत";
+  officeAddrsIcon : string = "../assets/Icons/office.svg";
+  homeAddr : string = "Banda, Uttar Pradesh - India || बाँदा, उत्तर प्रदेश - भारत";
+  homeAddrsIcon : string = "../assets/Icons/home.svg";
   email : string = "ps.prafullsaxena0@gmail.com";
-  openToWork : string = "YES";
+  emailIcon : string = "../assets/Icons/email-2.svg";
+  openToWork : string = "  YES";
 
 
   // MediaLink URL
@@ -145,42 +150,54 @@ export class HardCodingDataService {
     "../assets/Icons/sorting-visulizer.svg",
     "Sorting Visulizer",
     "Angular Application that Visulize the different types of Sorting algorithms.",
-    "https://github.com/PrafullSaxena/"
+    "https://github.com/PrafullSaxena/",
+    "",
+    false
   );
 
   searchingVusilizer : Project = new Project(
     "../assets/Icons/searching-visulizer.svg",
     "Searching Visulizer",
     "Angular Application that Visulize the different types of Searching algorithms.",
-    "https://github.com/PrafullSaxena/"
+    "https://github.com/PrafullSaxena/",
+    "",
+    false
   );
 
   jobTracker : Project = new Project(
     "../assets/Icons/employee-search.svg",
     "Job-Opening Tracker",
     "A Python Application that keeps the tracks of a Job and logs it in the CSV file.",
-    "https://github.com/PrafullSaxena/JobSearch"
+    "https://github.com/PrafullSaxena/JobSearch",
+    "",
+    false
   );
 
   ticTakToe : Project = new Project(
     "../assets/Icons/tictaktoe.svg",
     "Tic-Tac-Toe",
     "Simple CLI Based TicTacToe application build over Java",
-    "https://github.com/PrafullSaxena/Java-tikTakToe"
+    "https://github.com/PrafullSaxena/Java-tikTakToe",
+    "",
+    false
   );
 
   empDashBoard : Project = new Project(
     "../assets/Icons/web-dashboard.svg",
     "Employee Management Dashboard",
     "A Dashboard to manage CRUD on Employee DataSet build over Angular + Spring Boot + MySQL.",
-    "https://github.com/PrafullSaxena/Employee-Manager"
+    "https://github.com/PrafullSaxena/Employee-Manager",
+    "",
+    false
   );
 
   leetCode : Project = new Project(
     "../assets/Icons/coding-2.svg",
     "Some LeetCode Solutions",
     "Optimum Solution on Java for some famous Problems on LeetCode",
-    "https://github.com/PrafullSaxena/LeetCode"
+    "https://github.com/PrafullSaxena/LeetCode",
+    "",
+    false
   );
 
 

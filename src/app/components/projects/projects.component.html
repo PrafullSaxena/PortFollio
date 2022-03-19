@@ -8,7 +8,10 @@
                     <img src="{{project.svgLocation}}" class="project-icon" alt="">
                 <span class="project-name">{{project.projectName}}</span>
                 </div>
-                <div>
+                <div class="git-and-launch-icons text-end">
+                    <a href="{{project.demoUrl}}" *ngIf="project.isDemoAvailable">
+                        <img class="launch" src="../../../assets/Icons/startup-2.svg" alt="">
+                    </a>
                     <a href="{{project.projectURL}}">
                         <img class="github" src="../../../assets/Icons/githuub.svg" alt="">
                     </a>
@@ -22,4 +25,4 @@
 
 
     </div>
-</div>
+</div>  

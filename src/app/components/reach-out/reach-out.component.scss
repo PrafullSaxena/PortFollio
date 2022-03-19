@@ -1,0 +1,92 @@
+@import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/color.scss";
+@import "../../../assets/SCSS/animations.scss";
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .box-1{
+    	@include swing-in-left;
+
+        
+        .heading{
+            @include title-font;
+
+            img{
+                @include wobble-icons;
+                width: 1.2em;
+                margin-left: .5em;
+                justify-self: center;
+            }
+        }
+
+        .sub-title-text{
+            @include para-font;
+            line-height: 30px;
+        }
+
+        .about-me-text{
+            @include font-5;
+            @include para-font;
+            text-decoration: solid;
+        }
+
+        .other-info-container{
+            
+            margin-top: 1em;
+            margin-bottom: 1em;
+
+            .img-fluid{
+                width: 1em;
+            }
+
+            .other-info{
+
+                @include para-font;
+
+                display: flex;
+                justify-content: center;
+
+                div{
+                    margin: .3em .1em;
+                }
+            }
+            .open-to-work{
+
+
+                span:nth-child(2){
+                    margin-left: 1em;
+                    text-decoration: solid;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .box-2{
+    	@include swing-in-right;
+
+        img{
+            width: 70%;
+            border-radius: 50%;
+            border: 5px solid #63908F;
+        }
+    }
+}
+
+.color-dark{
+    color: #825BEA
+}
+
+@media (min-width:768px) {
+    .main-container{
+        gap: 0;
+        grid-template-columns: 70% 30%; 
+    }
+
+
+
+}
