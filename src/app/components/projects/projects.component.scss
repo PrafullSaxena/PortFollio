@@ -1,0 +1,93 @@
+@import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/color.scss";
+@import "../../../assets/SCSS/animations.scss";
+
+
+
+
+// Default Values : Start
+.title{
+    @include title-font;
+}
+
+.project-box-layout{
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: first baseline;
+    align-items: baseline;
+    gap: 1em;
+
+    padding-top: 2rem;
+}
+
+.project-box{
+    padding: .5em;
+    min-width: 20rem;
+
+    border-radius: 10px;
+    box-shadow: rgba(81, 75, 139, 0.637) 0px 1px 3px,
+                 rgba(81, 75, 139, 0.24) 0px 1px 2px;
+
+    .project-title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+
+        .project-icon{
+            width: 1.5em;
+            margin-right: .5em;
+        }
+
+        .project-name{
+            @include title-font;
+        }
+
+        .github{
+            width: 1.5em;
+        }
+
+    }
+
+    .project-desc{
+        @include para-font;
+    }
+}
+
+.project-box:hover{
+    box-shadow: rgba(81, 75, 139, 0.25) 0px 54px 55px, 
+                rgba(81, 75, 139, 0.12) 0px -12px 30px, 
+                rgba(81, 75, 139, 0.12) 0px 4px 6px, 
+                rgba(81, 75, 139, 0.17) 0px 12px 13px, 
+                rgba(81, 75, 139, 0.09) 0px -3px 5px;
+
+    .project-name{
+        text-decoration: underline;
+    }
+}
+
+
+.color-dark{
+    color: #825BEA
+}
+
+@media (min-width:768px) {
+    .project-box-layout{
+        grid-template-columns: 1fr 1fr; 
+    }
+
+}
+// @media (min-width:768px) {
+//     .project-box-layout{
+//         // gap: 0;
+//         grid-template-columns: 1fr 1fr; 
+//     }
+
+// }
+
+@media (min-width:1200px) {
+    .project-box-layout{
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+}
+

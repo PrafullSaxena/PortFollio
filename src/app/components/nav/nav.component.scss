@@ -1,0 +1,25 @@
+@import "../../../assets/SCSS/fonts.scss";
+@import "../../../assets/SCSS/color.scss";
+@import "../../../assets/SCSS/animations.scss";
+
+
+.main{
+    margin-bottom: 2rem;
+position: relative;
+
+#skill-heading-icon {
+  @include icons-zoom-in-out;
+
+  position: absolute;
+  width: 1em;
+
+  margin-top: 6px;
+  margin-left: 3px;
+}
+}
+
+.color-dark {
+    color: #825bea;
+  //   background-color: black;
+  }
+  

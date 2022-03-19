@@ -142,46 +142,56 @@ export class HardCodingDataService {
   //Project
   
   sortingVusilizer : Project = new Project(
-    "sortingVisulizerSVG",
+    "../assets/Icons/sorting-visulizer.svg",
     "Sorting Visulizer",
     "Angular Application that Visulize the different types of Sorting algorithms.",
     "https://github.com/PrafullSaxena/"
   );
 
   searchingVusilizer : Project = new Project(
-    "searchVisulizerSVG",
+    "../assets/Icons/searching-visulizer.svg",
     "Searching Visulizer",
     "Angular Application that Visulize the different types of Searching algorithms.",
     "https://github.com/PrafullSaxena/"
   );
 
   jobTracker : Project = new Project(
-    "jobTracker",
+    "../assets/Icons/employee-search.svg",
     "Job-Opening Tracker",
     "A Python Application that keeps the tracks of a Job and logs it in the CSV file.",
     "https://github.com/PrafullSaxena/JobSearch"
   );
 
   ticTakToe : Project = new Project(
-    "ticTakToe",
+    "../assets/Icons/tictaktoe.svg",
     "Tic-Tac-Toe",
     "Simple CLI Based TicTacToe application build over Java",
     "https://github.com/PrafullSaxena/Java-tikTakToe"
   );
 
   empDashBoard : Project = new Project(
-    "empDashboard",
+    "../assets/Icons/web-dashboard.svg",
     "Employee Management Dashboard",
     "A Dashboard to manage CRUD on Employee DataSet build over Angular + Spring Boot + MySQL.",
     "https://github.com/PrafullSaxena/Employee-Manager"
   );
 
   leetCode : Project = new Project(
-    "leetcode",
+    "../assets/Icons/coding-2.svg",
     "Some LeetCode Solutions",
     "Optimum Solution on Java for some famous Problems on LeetCode",
     "https://github.com/PrafullSaxena/LeetCode"
   );
+
+
+  projects : Project[] = [
+    this.sortingVusilizer,
+    this.searchingVusilizer,
+    this.jobTracker,
+    this.ticTakToe,
+    this.empDashBoard,
+    this.leetCode
+  ];
 
   //End: Project
 }

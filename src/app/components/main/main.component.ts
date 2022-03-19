@@ -13,6 +13,7 @@ export class MainComponent implements OnInit,AfterViewInit {
     private elementRef: ElementRef) { }
 
   ngOnInit(): void {
+    // this.themeService.DarkModeSelected = true;
   }
 
 

@@ -22,3 +22,10 @@
         margin-bottom: 10rem;
     } 
 }
+@media (max-width:375px) {
+    .container{
+       margin: 0px;
+       padding: 0px;
+    } 
+}
+

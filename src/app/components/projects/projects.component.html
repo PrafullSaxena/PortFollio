@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <span class="title display-5" [ngClass]="{'color-dark':theme.DarkModeSelected}">Some of the Cool Projects and Repos 🚀</span>
+    <div class="project-box-layout">
+        <div class="project-box" 
+        *ngFor="let project of values.projects">
+            <div class="project-title fs-4">
+                <div>
+                    <img src="{{project.svgLocation}}" class="project-icon" alt="">
+                <span class="project-name">{{project.projectName}}</span>
+                </div>
+                <div>
+                    <a href="{{project.projectURL}}">
+                        <img class="github" src="../../../assets/Icons/githuub.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="project-desc fs-6">
+                {{project.projectInfo}}
+            </div>
+            
+        </div>
+
+
+    </div>
+</div>
