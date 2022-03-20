@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class prof {\n  constructor(skillName, expertiesInPercentage, iconsPath, expertieString) {\n    this.skillName = skillName;\n    this.expertiesInPercentage = expertiesInPercentage;\n    this.iconsPath = iconsPath;\n    this.expertieString = expertieString;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

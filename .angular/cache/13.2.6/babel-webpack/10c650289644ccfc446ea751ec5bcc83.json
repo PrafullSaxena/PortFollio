@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Media {\n  constructor(name, url, iconPath) {\n    this.name = name;\n    this.url = url;\n    this.iconPath = iconPath;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Education {\n  constructor(collegeLogo, courseName, collegeName, courseDurtion) {\n    this.collegeLogo = collegeLogo;\n    this.courseName = courseName;\n    this.collegeName = collegeName;\n    this.courseDurtion = courseDurtion;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

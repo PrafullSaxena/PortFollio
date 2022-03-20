@@ -1,0 +1,26 @@
+@mixin title-font {
+  font-family: "Bitter", serif;
+}
+
+@mixin logo-font {
+  font-family: "Flamenco", cursive;
+  font-size: clamp(1.5rem, 2.5vw, 4rem); 
+}
+
+@mixin nav-btn-font{
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2rem); 
+}
+
+@mixin btn-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin para-font {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+@mixin font-5 {
+  font-size: "Poppins", sans-serif;
+  font-size: xx-large;
+}
