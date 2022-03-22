@@ -57,7 +57,7 @@
 
  .experties-in-skills{
     @include title-font;
-    display: none;
+    display: block;
 
     margin-right: 0px;
     margin-left: auto;
@@ -68,6 +68,19 @@
     .experties-in-skills{
         @include title-font;
         display: block;
+     }
+ }
+
+ @media (hover) {
+
+    .experties-in-skills{
+        display: none;
+    }    
+
+    .prof-tab:hover{
+        .experties-in-skills{
+            display: block;
+         }
      }
  }
 

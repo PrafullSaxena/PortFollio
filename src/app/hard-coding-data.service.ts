@@ -176,8 +176,8 @@ export class HardCodingDataService {
     "Sorting Visulizer",
     "Angular Application that Visulize the different types of Sorting algorithms.",
     "https://github.com/PrafullSaxena/",
-    "",
-    false
+    "https://sort-vis.web.app",
+    true
   );
 
   searchingVusilizer: Project = new Project(
